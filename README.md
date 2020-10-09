@@ -1,16 +1,18 @@
-# movie_app
+# Flutter Movies App
+A sample app that makes requests to the OMDB API to fetch movies data and displays them in a gallery.
 
-A new Flutter project.
+## Instructions
+### 1 - Clone the repository
+`git clone https://github.com/HairdressingProject/flutter-movies-app.git`
 
-## Getting Started
+### 2 - Add API key
+Before running the app, create a file named `.secrets` in the root project folder and add your own API key from OMDB as shown below:
 
-This project is a starting point for a Flutter application.
+```
+API_KEY=your_api_key
+```
 
-A few resources to get you started if this is your first Flutter project:
+### 3 - Build & Run
+You should now be able to build and run the project using your IDE / text editor of choice.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+If you are using VSCode, simply press __F5__ and select your emulator to start debugging.

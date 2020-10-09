@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movie_app/views/movie_details.dart';
+import 'package:movie_app/views/pages/movie_details.dart';
 import 'package:transparent_image/transparent_image.dart';
 import 'package:movie_app/models/movie.dart';
 

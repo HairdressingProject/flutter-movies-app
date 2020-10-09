@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:movie_app/views/about.dart';
-import 'package:movie_app/views/home.dart';
+import 'package:movie_app/views/pages/about.dart';
+import 'package:movie_app/views/pages/home.dart';
 
 const DrawerHeader defaultDrawerHeader = DrawerHeader(
   child: Center(

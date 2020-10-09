@@ -24,6 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   transparent_image: ^1.0.0
+  http: ^0.12.2
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -45,6 +46,8 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
+  assets:
+    - .secrets
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

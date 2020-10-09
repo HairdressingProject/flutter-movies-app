@@ -2,10 +2,16 @@ import 'package:flutter/material.dart';
 
 import 'movie_item.dart';
 
-class MoviesGallery extends StatelessWidget {
-  MoviesGallery({Key key, this.movies}) : super(key: key);
+class MoviesGallery extends StatefulWidget {
+  @override
+  _MoviesGalleryState createState() => _MoviesGalleryState();
+}
 
-  final List<MovieItem> movies;
+class _MoviesGalleryState extends State<MoviesGallery> {
+  @override
+  void initState() {
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
