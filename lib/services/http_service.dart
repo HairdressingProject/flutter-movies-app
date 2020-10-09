@@ -24,6 +24,6 @@ class HttpService {
       } else {
         throw Exception('Failed to fetch one or more movies');
       }
-    }));
+    }).toList());
   }
 }

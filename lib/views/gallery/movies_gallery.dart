@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:movie_app/data/movies_list.dart';
 import 'package:movie_app/models/movie.dart';
 import 'package:movie_app/services/http_service.dart';
 
@@ -26,6 +25,8 @@ class _MoviesGalleryState extends State<MoviesGallery> {
     return FutureBuilder<List<Movie>>(
         future: _movies,
         builder: (context, snapshot) {
+          print('Data:\n');
+          print(snapshot.data);
           if (snapshot.hasData) {
             return Expanded(
                 child: Scrollbar(
@@ -34,7 +35,7 @@ class _MoviesGalleryState extends State<MoviesGallery> {
                         crossAxisSpacing: 10.0,
                         padding: const EdgeInsets.symmetric(horizontal: 15.0),
                         children: List.generate(
-                            moviesListByTitle.length,
+                            snapshot.data.length,
                             (index) => Center(
                                 child: MovieItem(
                                     movie: Movie(
