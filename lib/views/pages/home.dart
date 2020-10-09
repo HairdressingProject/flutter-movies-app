@@ -8,29 +8,31 @@ class Home extends StatelessWidget {
   @override
   build(BuildContext context) {
     return Layout(
-      title: 'Home',
-      header: 'Browse movies',
-      drawerItems: buildDefaultDrawerItems(context),
-      body: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10.0),
+        title: 'Home',
+        header: 'Browse movies',
+        drawerItems: buildDefaultDrawerItems(context),
+        body: Center(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 10.0),
+              ),
+              const Text(
+                'Browse movies',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 1.0,
+                    fontSize: 24.0,
+                    fontFamily: 'Klavika'),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 10.0),
+              ),
+              MoviesGallery()
+              // buildMoviesGallery(context)
+            ],
           ),
-          const Text(
-            'Browse movies',
-            style: TextStyle(
-                fontWeight: FontWeight.bold,
-                letterSpacing: 1.0,
-                fontSize: 24.0,
-                fontFamily: 'Klavika'),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10.0),
-          ),
-          MoviesGallery()
-          // buildMoviesGallery(context)
-        ],
-      ),
-    );
+        ));
   }
 }

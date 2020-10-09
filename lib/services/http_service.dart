@@ -14,11 +14,13 @@ class HttpService {
     String apiKey = await SecretsService.getAPIKey();
 
     return Future.wait(movieTitles.map((title) async {
-      final response =
-          await http.get('$OMDB_API_MOVIES_URL?apikey=$apiKey&t=$title');
+      final response = await http
+          .get(Uri.encodeFull('$OMDB_API_MOVIES_URL?apikey=$apiKey&t=$title'));
 
       if (response.statusCode == 200) {
-        return Movie.fromJson(jsonDecode(response.body));
+        final movie = Movie.fromJson(jsonDecode(response.body));
+        print(movie);
+        return movie;
       } else {
         throw Exception('Failed to fetch one or more movies');
       }
