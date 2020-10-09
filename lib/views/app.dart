@@ -18,21 +18,13 @@ class _App extends State<App> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: widget.title,
-      darkTheme: ThemeData(brightness: Brightness.dark),
-      themeMode: ThemeMode.dark,
-      home: Navigator(
-        pages: widget.pages,
-        onPopPage: (route, result) => route.didPop(result),
-      ),
-      theme: ThemeData(
-          primaryColor: Colors.deepPurple,
-          accentColor: Colors.purple[300],
-          fontFamily: 'Klavika',
-          textTheme: TextTheme(
-              headline1: TextStyle(fontSize: 72.0, fontWeight: FontWeight.bold),
-              headline6: TextStyle(fontSize: 36.0, fontStyle: FontStyle.italic),
-              bodyText2: TextStyle(fontSize: 14.0))),
-    );
+        title: widget.title,
+        darkTheme: ThemeData(brightness: Brightness.dark),
+        themeMode: ThemeMode.dark,
+        theme: ThemeData(fontFamily: 'Klavika'),
+        home: Navigator(
+          pages: widget.pages,
+          onPopPage: (route, result) => route.didPop(result),
+        ));
   }
 }

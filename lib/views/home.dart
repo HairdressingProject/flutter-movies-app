@@ -15,16 +15,16 @@ class Home extends StatelessWidget {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 12.0),
+              padding: const EdgeInsets.symmetric(vertical: 10.0),
             ),
-            Container(
-                child: Text(
-              'Home UI',
+            Text(
+              'Browse movies',
               style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  letterSpacing: 0.5,
-                  fontSize: 18),
-            )),
+                  letterSpacing: 1.0,
+                  fontSize: 24.0,
+                  fontFamily: 'Klavika'),
+            )
           ],
         ),
       ),

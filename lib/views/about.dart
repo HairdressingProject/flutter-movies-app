@@ -7,31 +7,26 @@ class About extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Layout(
-      title: 'About',
-      header: 'About UI',
-      drawerItems: buildDefaultDrawerItems(context),
-      body: Center(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Padding(padding: const EdgeInsets.symmetric(vertical: 20.0)),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                IconButton(
-                    icon: Icon(
-                      Icons.chevron_left,
-                      size: 32.0,
-                    ),
-                    onPressed: () => Navigator.of(context).pop()),
-                Text('About',
-                    style:
-                        TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold))
-              ],
-            )
-          ],
-        ),
-      ),
-    );
+        title: 'About',
+        header: 'About UI',
+        drawerItems: buildDefaultDrawerItems(context),
+        body: Container(
+          alignment: Alignment.center,
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 10.0),
+              ),
+              Text(
+                'About this app',
+                style: TextStyle(
+                    fontSize: 24.0,
+                    fontWeight: FontWeight.w700,
+                    letterSpacing: 1.0,
+                    fontFamily: 'Klavika'),
+              )
+            ],
+          ),
+        ));
   }
 }

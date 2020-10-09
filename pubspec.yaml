@@ -72,5 +72,14 @@ flutter:
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
+  fonts:
+    - family: Klavika
+      fonts:
+        - asset: assets/fonts/klavika-medium.otf
+        - asset: assets/fonts/klavika-medium-italic.otf
+        - asset: assets/fonts/klavika-light.otf
+          weight: 300
+        - asset: assets/fonts/klavika-bold.otf
+          weight: 700
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
