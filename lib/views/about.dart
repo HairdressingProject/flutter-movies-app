@@ -17,7 +17,7 @@ class About extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10.0),
               ),
-              Text(
+              const Text(
                 'About this app',
                 style: TextStyle(
                     fontSize: 24.0,

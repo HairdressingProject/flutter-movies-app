@@ -23,6 +23,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  transparent_image: ^1.0.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -77,6 +78,7 @@ flutter:
       fonts:
         - asset: assets/fonts/klavika-medium.otf
         - asset: assets/fonts/klavika-medium-italic.otf
+          style: italic
         - asset: assets/fonts/klavika-light.otf
           weight: 300
         - asset: assets/fonts/klavika-bold.otf
