@@ -25,15 +25,13 @@ class _MoviesGalleryState extends State<MoviesGallery> {
     return FutureBuilder<List<Movie>>(
         future: _movies,
         builder: (context, snapshot) {
-          print('Data:\n');
-          print(snapshot.data);
           if (snapshot.hasData) {
             return Expanded(
                 child: Scrollbar(
                     child: GridView.count(
                         crossAxisCount: 2,
-                        crossAxisSpacing: 10.0,
-                        padding: const EdgeInsets.symmetric(horizontal: 15.0),
+                        mainAxisSpacing: 50.0,
+                        padding: const EdgeInsets.symmetric(horizontal: 5.0),
                         children: List.generate(
                             snapshot.data.length,
                             (index) => Center(
