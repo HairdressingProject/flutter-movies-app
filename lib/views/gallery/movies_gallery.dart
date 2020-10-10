@@ -41,7 +41,7 @@ class _MoviesGalleryState extends State<MoviesGallery> {
                                     movie: Movie(
                                         title: snapshot.data[index].title,
                                         director: snapshot.data[index].director,
-                                        year: snapshot.data[index].director,
+                                        year: snapshot.data[index].year,
                                         synopsis: snapshot.data[index].synopsis,
                                         posterUrl: snapshot
                                             .data[index].posterUrl)))))));
